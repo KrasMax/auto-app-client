@@ -1,0 +1,336 @@
+{
+  "dataUser": [
+    {
+      "login": "KrasMax",
+      "password": "7742840",
+      "logoCar": "img/icon_auto/Volkswagen.png",
+      "startMileage": 156000,
+      "curentWithout": 198230,
+      "middleMileage": 500,
+      "fuelType": "95",
+      "fuelMiddle": 7,
+      "priceAuto": 3700,
+      "changeOil": [
+        198786
+      ],
+      "mileageHistory": [
+        198230,
+        198230,
+        198230,
+        198890,
+        198890,
+        198890
+      ],
+      "event": [
+        {
+          "nameEvent": "Замена тормозных дисков (передних)",
+          "date": "21.4.2018",
+          "whoSpent": "самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "Тормозные диски передние",
+              "brandDetails": "STELLOX 256 mm",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 62,
+          "mileage": 158694,
+          "typeEvent": "Плановое"
+        },
+        {
+          "nameEvent": "Замена тормозных колодок (передних)",
+          "date": "21.4.2018",
+          "whoSpent": "самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "Тормозные колодки передние",
+              "brandDetails": "STELLOX",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 19.9,
+          "mileage": 158694,
+          "typeEvent": "Плановое ТО"
+        },
+        {
+          "nameEvent": "Ремонт кондиционера",
+          "date": "14.5.2018",
+          "whoSpent": "СТО на Машиностроителей 32",
+          "installedParts": [
+            {
+              "nameDetail": "Фильтр осушитель",
+              "brandDetails": "No name",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 192,
+          "mileage": 159240,
+          "typeEvent": "Текущий ремонт"
+        },
+        {
+          "nameEvent": "Ремонт кондиционера",
+          "date": "18.5.2018",
+          "whoSpent": "СТО в Уручье",
+          "installedParts": [
+            {
+              "nameDetail": "Испаритель кондиционера (б/у)",
+              "brandDetails": "No name",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 288,
+          "mileage": 159290,
+          "typeEvent": "Текущий ремонт"
+        },
+        {
+          "nameEvent": "Замена фильтра",
+          "date": "30.5.2018",
+          "whoSpent": "Самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "Фильтр салона",
+              "brandDetails": "FILTRON",
+              "detailNumber": "1J0 819644A"
+            }
+          ],
+          "price": 7,
+          "mileage": 159627,
+          "typeEvent": "Плановое ТО"
+        },
+        {
+          "nameEvent": "Замена фильтра",
+          "date": "30.5.2018",
+          "whoSpent": "Самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "Фильтр воздушный",
+              "brandDetails": "ASAM",
+              "detailNumber": "70343"
+            }
+          ],
+          "price": 17,
+          "mileage": 159627,
+          "typeEvent": "Плановое ТО"
+        },
+        {
+          "nameEvent": "Чистка клапана ЕГР",
+          "date": "05.7.2018",
+          "whoSpent": "СТО на Автобазе",
+          "installedParts": [
+            {
+              "nameDetail": "-",
+              "brandDetails": "-",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 45,
+          "mileage": 160940,
+          "typeEvent": "Текущий ремонт"
+        },
+        {
+          "nameEvent": "Замена амортизатора капота",
+          "date": "20.7.2018",
+          "whoSpent": "Самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "амортизатор капота",
+              "brandDetails": "Stellox",
+              "detailNumber": "11-40110-sx"
+            }
+          ],
+          "price": 9.8,
+          "mileage": 161339,
+          "typeEvent": "Текущий ремонт"
+        },
+        {
+          "nameEvent": "Замена клапана ЕГР",
+          "date": "17.8.2018",
+          "whoSpent": "Самостоятельно",
+          "installedParts": [
+            {
+              "nameDetail": "Клапан ЕГР",
+              "brandDetails": "Patron",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 125,
+          "mileage": 161518,
+          "typeEvent": "Текущий ремонт"
+        },
+        {
+          "nameEvent": "Замена масла",
+          "date": "11.10.2018",
+          "whoSpent": "ООО Трис-прогрес-плюс",
+          "installedParts": [
+            {
+              "nameDetail": "Моторное масло",
+              "brandDetails": "Лукоил",
+              "detailNumber": "GENESIS ADVANCED 10W40"
+            },
+            {
+              "nameDetail": "Маслянной фильтр",
+              "brandDetails": "CLEAN FILTER",
+              "detailNumber": "DO1807"
+            }
+          ],
+          "price": 55,
+          "mileage": 162640,
+          "typeEvent": "Плановое ТО"
+        },
+        {
+          "nameEvent": "Ремонт кузова",
+          "date": "09.8.2019",
+          "whoSpent": "СТО Альфа-Кузов",
+          "installedParts": [
+            {
+              "nameDetail": "-",
+              "brandDetails": "-",
+              "detailNumber": "-"
+            }
+          ],
+          "price": 1550,
+          "mileage": 172000,
+          "typeEvent": "Капитальный ремонт"
+        },
+        {
+          "nameEvent": "Замена двигателя",
+          "date": "12.9.2020",
+          "whoSpent": "На гаражах возле МЧС",
+          "installedParts": [
+            {
+              "nameDetail": "двигатель",
+              "brandDetails": "WV",
+              "detailNumber": "APE"
+            }
+          ],
+          "price": 1820,
+          "mileage": 182328,
+          "typeEvent": "Капитальный ремонт"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "login": "max",
+      "password": "1234",
+      "logoCar": "img/icon_auto/BMW.png",
+      "startMileage": 500,
+      "curentWithout": 5000,
+      "middleMileage": 500,
+      "fuelType": "98",
+      "fuelMiddle": 8,
+      "priceAuto": 10000,
+      "changeOil": [],
+      "mileageHistory": [
+        5000
+      ],
+      "event": [],
+      "id": 2
+    },
+    {
+      "login": "Alex",
+      "password": "1234",
+      "logoCar": "img/icon_auto/BMW.png",
+      "startMileage": 1000,
+      "curentWithout": 5,
+      "middleMileage": 500,
+      "fuelType": "95",
+      "fuelMiddle": 8,
+      "priceAuto": 15000,
+      "changeOil": [],
+      "mileageHistory": [
+        5
+      ],
+      "event": [],
+      "id": 3
+    },
+    {
+      "login": "Denis",
+      "password": "0123456",
+      "logoCar": "img/icon_auto/Citroen.png",
+      "startMileage": 250000,
+      "curentWithout": 250300,
+      "middleMileage": 600,
+      "fuelType": "92",
+      "fuelMiddle": 9,
+      "priceAuto": 3700,
+      "changeOil": [],
+      "mileageHistory": [
+        250300,
+        250301
+      ],
+      "event": [
+        {
+          "date": "16.03.2022",
+          "mileage": 250100,
+          "nameEvent": "Замена передних тормозных колодок",
+          "price": 150,
+          "typeEvent": "Плановое ТО",
+          "whoSpent": "Самостоятельно",
+          "installedParts": [
+            {
+              "brandDetails": "Brembo",
+              "detailNumber": "465gdf654",
+              "nameDetail": "Тормозные колодки"
+            }
+          ]
+        },
+        {
+          "date": "19.03.2022",
+          "mileage": 250250,
+          "nameEvent": "Замена КПП",
+          "price": 1800,
+          "typeEvent": "Капиталиный ремонт",
+          "whoSpent": "ООО \"Автосервис\"",
+          "installedParts": [
+            {
+              "brandDetails": "Ситроен",
+              "detailNumber": "654ыпва564",
+              "nameDetail": "КПП"
+            }
+          ]
+        }
+      ],
+      "id": 4
+    },
+    {
+      "login": "Алексей",
+      "password": "7742840",
+      "logoCar": "img/icon_auto/Ford.png",
+      "startMileage": 500,
+      "curentWithout": 15000,
+      "middleMileage": 400,
+      "fuelType": "98",
+      "fuelMiddle": 8,
+      "priceAuto": 28000,
+      "mileageHistory": [
+        15000
+      ],
+      "event": [],
+      "changeOil": [],
+      "id": 5
+    },
+    {
+      "login": "Test",
+      "password": "1234",
+      "logoCar": "img/icon_auto/Chery.png",
+      "startMileage": 5,
+      "curentWithout": 5,
+      "middleMileage": 100,
+      "fuelType": "95",
+      "fuelMiddle": 8,
+      "priceAuto": 500,
+      "mileageHistory": [
+        5,
+        6,
+        6,
+        6
+      ],
+      "event": [],
+      "changeOil": [
+        4
+      ],
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=985">
+  <title>База по авто </title>
+  <link rel="shortcut icon" href="/img/logoTitle.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+  <!-- modal login -->
+  <div class="modal-content">
+    <div id="modal1" class="modal">
+      <h4>Авторизируйтесь на нашем сайте</h4>
+      <div class="reg_form">
+        <form id="in-form" action="https://fe.it-academy.by/TestForm.php" method="post">
+          <div class="input_form_reg">
+            <input id="login-user" type="text" name="user name" placeholder="login" />
+            <p id="log-eror" class="mess_eror">Не верный логи</p>
+          </div>
+          <div class="input_form_reg">
+            <input id="pass-user" type="password" name="pass name" placeholder="password" />
+            <p id="pass-eror" class="mess_eror">Не верный пароль</p>
+          </div>
+          <div class="input_form_reg">
+            <input id="without-the-car" type="number" name="without a car" placeholder="Текущий пробег">
+            <p id="car-mileage-eror" class="mess_eror">Вы вводили такой пробег</p>
+          </div>
+          <div id="start-program" class="input_form_reg">
+            <button type="submit">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- main-content -->
+  <div class="content">
+  </div>
+  <footer class="footer">
+    <div>
+      <p>
+        Copyright © 2022
+        <a href="https://www.it-academy.by/course/front-end-developer/" target="_blank">IT-academy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>

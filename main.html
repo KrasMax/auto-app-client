@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=985">
+  <title>База по авто</title>
+  <link rel="shortcut icon" href="/img/logoTitle.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styleMain.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div id="block-nav">
+      <span class="btn_nav"><a href="main.html">Главная</a></span>
+
+      <span class="btn_nav"><a href="carExpenses.html">Расходы по авто</a></span>
+
+      <span class="btn_nav"><a href="winDetails.html">VIN деталей</a></span>
+    </div>
+  </header>
+
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="clos" class="close">&times;</span>
+        <span>На каком пробеге было заменено масло?</span>
+      </div>
+      <div class="modal-body">
+        <div class="input_form ">
+          <input id="change-oil" type="number" name="change oil" placeholder="Пробег" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span id="write-change-oil" class="btn_nav"><a href="#">Записать</a></span>
+      </div>
+    </div>
+  </div>
+  <!-- Change oil -->
+  <div class="change_oil">
+    <img src="./img/oil2.png" alt="oil">
+  </div>
+  <!-- main-content -->
+  <div class="content">
+    <div id="main-content" class="main_content">
+      <div id="main-footer" class="main_footer">
+        <div id="logo" class="logo_footer">
+          <img src="img/icon_auto/Volkswagen.png" alt="Logo Вашего авто">
+        </div>
+        <div id="user-name" class="position_name">
+          <span>User</span>
+        </div>
+        <div id="log-out" class="logo_footer">
+          <a href="#">Выход</a>
+        </div>
+      </div>
+      <div class="block_current_info">
+        <div class="current_weather">
+          <div class="data_weather">
+            <div class="img_weather">
+              <img src="https://openweathermap.org/img/w/02d.png" alt="#">
+              <p>Ясно</p>
+            </div>
+            <div class="temperature">
+              <div class="temperature_number">
+                <span>-2</span>
+              </div>
+              <div class="temperature_logo">
+                <span>&#8451</span>
+              </div>
+            </div>
+            <div class="precipitation">
+              <div class="gusts_of_wind">
+                <span>Порывы ветра до: 1 м/с</span>
+              </div>
+              <div class="humidity">
+                <span>Влажнасть: 40%</span>
+              </div>
+              <div class="wind">
+                <span>Ветер: 3 м/с</span>
+              </div>
+            </div>
+          </div>
+          <div class="locatin_weather">
+            <span>Погода в LOCATION</span>
+          </div>
+        </div>
+        <div class="current_exchange_rate">
+          <div class="label">
+            <span>Курсы валют в AlfaBank на DATE </span>
+          </div>
+          <div class="header_rate block_position">
+            <div class="rate">
+              <span>Валюта</span>
+            </div>
+            <div class="purchase_cash">
+              <span>Покупка</span>
+            </div>
+            <div class="sale_cash">
+              <span>Продажа</span>
+            </div>
+          </div>
+          <div class="block_USD block_position">
+            <div class="lable_cash">
+              <span><img src="img/usaWeb.png" alt="">USD</span>
+            </div>
+            <div class="block_purchase_USD">
+              <span></span>
+            </div>
+            <div class="block_sale_USD">
+              <span></span>
+            </div>
+          </div>
+          <div class="block_EUR block_position">
+            <div class="lable_cash">
+              <span><img src="img/EUROP.png" alt=""> EUR</span>
+            </div>
+            <div class="block_purchase_EUR">
+              <span></span>
+            </div>
+            <div class="block_sale_EUR">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="block_RUB block_position">
+            <div class="lable_cash">
+              <span><img src="img/RF.png" alt="">RUB</span>
+            </div>
+            <div class="block_purchase_RUB">
+              <span></span>
+            </div>
+            <div class="block_sale_RUB">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div id="add-event" class="add_event">
+        <p>Добавить расходы</p>
+        <div class="box_event">
+          <!-- Тип ремонта -->
+          <div id="type-work" class="input_form">
+            <span>Тип: </span><br>
+            <select name="type a work" id="type-work-curr">
+              <option value="Ремонт">Ремонт</option>
+              <option value="Плановое ТО">Плановое ТО</option>
+              <option value="Сезенное ТО">Сезенное ТО</option>
+              <option value="Капиталиный ремонт">Капиталиный ремонт</option>
+            </select>
+          </div>
+          <!-- Кем проводилось -->
+          <div id="" class="input_form ">
+            <span>Кем проводилось:</span>
+            <input id="who-did" type="text" name="who did" placeholder="Кто делал" />
+          </div>
+        </div>
+        <div class="box_event">
+          <!-- На кааом пробеге -->
+          <div id="" class="input_form ">
+            <span>На каком пробеге:</span>
+            <input id="mileage" type="number" name="mileage work" placeholder="Пробег" />
+          </div>
+          <!-- Описнаие события -->
+          <div id="" class="input_form ">
+            <span>Описание работ:</span>
+            <input id="name-event" type="text" name="name event" placeholder="Описание" />
+          </div>
+        </div>
+        <div class="box_event">
+          <!-- Название детали -->
+          <div id="" class="input_form ">
+            <span>Название детали:</span>
+            <input id="name-Detail" type="text" name="name Detail" placeholder="Название" />
+          </div>
+          <!-- Бренд установленной детали -->
+          <div id="" class="input_form ">
+            <span>Бренд установленной детали:</span>
+            <input id="brand-details" type="text" name="brand details" placeholder="Марка детали" />
+          </div>
+        </div>
+        <div class="box_event">
+          <!-- Номер детали -->
+          <div id="" class="input_form ">
+            <span>Номер детали:</span>
+            <input id="number-details" type="text" name="number details" placeholder="Номер детали" />
+          </div>
+          <!-- Стоимость события -->
+          <div id="" class="input_form ">
+            <span>Стоимость:</span>
+            <input id="cost-of-work" type="number" name="cost of work" placeholder="Стоимость" />
+          </div>
+        </div>
+        <!-- Когда -->
+        <div id="" class="input_form ">
+          <span>Дата ремонта:</span>
+          <input id="date-of-work" type="date" name="date of work" placeholder="Дата" />
+        </div>
+        <div id="btn-add-event" class="input_form ">
+          <span class="btn_nav"><a href="#">Записать</a></span>
+          <span id="mess-error" class="mess_eror">Заполните все поля</span>
+        </div>
+      </div>
+      <!--  -->
+      <div id="statistical-information">
+        <div id="curent-without" class="content_info">
+          <span>Текущий пробег авто:</span>
+          <span>VALUE</span>
+        </div>
+        <div id="mileage-to-maintenance" class="content_info">
+          <span>Пробег через который ожидается ТО:</span>
+          <span>VALUE</span>
+        </div>
+        <div id="price-auto" class="content_info">
+          <span>На сегоднешний день Ваше авто вам обошлось в :</span>
+          <span>VALUE $ или по курсу национального банка РБ VALUE</span>
+        </div>
+        <div id="user-mileage" class="content_info">
+          <span>С момента покупки на вашем авто Вы проехали :</span>
+          <span>VALUE киллометров.</span>
+        </div>
+        <div id="average-fuel-consumption" class="content_info">
+          <span>В среднем за момент эксплуатации данно авто было ссожено :</span>
+          <span>VALUE литров топлива.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p>
+        Copyright © 2022
+        <a href="https://www.it-academy.by/course/front-end-developer/" target="_blank">IT-academy</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/weather.js"></script>
+  <script src="js/exchangeRate.js"></script>
+  <script src="js/scriptMain.js"></script>
+  <script src="js/addEvent.js"></script>
+  <script src="js/scriptModal.js"></script>
+</body>
+
+</html>

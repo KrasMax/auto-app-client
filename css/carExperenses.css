@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: linear-gradient(90deg, #2c2c2c, #25363f);
+	font-family: 'Ubuntu', sans-serif;   
+	min-width: 985px;
+}
+
+.header {
+	
+	background: linear-gradient(90deg, #2c2c2c, #25363f); 
+	width: 70%;
+	border-radius: 15px;
+	min-width: 600px;
+    border-bottom: 2px solid #ffffff;
+    background-color: #dfdfdf;
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    padding-top: 1px;
+	margin-bottom: 30px;
+}
+
+#block-nav{
+	margin: 0.8em auto;
+}
+
+.btn_nav{
+	font-size: 19px;
+	margin: 25px;
+	padding: 1px 5px 3px;
+	background-color: rgb(7, 165, 118);
+    border-radius: 15px;
+	background: linear-gradient(90deg, #2c2c2c, #25363f); 
+	
+}
+
+.btn_nav :hover {
+	color: #25363f;
+	padding: 1px 5px 3px 3px;
+	border-radius: 15px;
+	background: linear-gradient(90deg, #f6f6f6, #73c1eb); 
+}
+
+.btn_nav a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+
+
+.footer {
+	position: fixed;
+    bottom: 0;
+	width: 100%;
+	background: linear-gradient(90deg, #141212, #2e5164); 
+	min-width: 600px;
+    border-bottom: 2px solid #ffffff;
+    margin: 0 auto;
+    height: 35px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.footer p, a {
+	font-size: 20px;
+	color: #f6f6f6;
+}
+
+/* Стиль контента */
+.main_content{
+	background: #dfdfdf;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 5% 15% 5% 15%;
+	border-radius: 15px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.main_content p{
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+table {
+    border: 1px solid #25363f;
+}
+
+.hederTable{
+	font-weight: bolder;
+}
+
+td{
+    border: 1px solid #25363f;
+	padding: 5px;
+}
+
+.content_info{
+	margin: 15px auto;
+	width: 90%;
+	border-radius: 15px;
+	border-bottom: 2px solid #686868;
+	background-color: rgb(197, 197, 197);
+	box-shadow: 1px 5px 12px 1px;
+    padding: 15px;
+}
+/*  */
+
+.change_oil{
+	position: sticky;
+	padding-top: 400px;
+	visibility: visible;
+	top: 0;
+	margin-right: 10px;
+	float: right;
+}

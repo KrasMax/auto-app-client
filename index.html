@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=985">
+  <title>База по авто</title>
+  <link rel="shortcut icon" href="./img/logoTitle.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div id="block-nav">
+      <span class="btn_nav"><a href="#">Главная</a></span>
+
+      <span class="btn_nav"><a href="#">Расходы по авто</a></span>
+
+      <span class="btn_nav"><a href="#">VIN деталей</a></span>
+    </div>
+  </header>
+
+  <div class="preview">
+    <div id="greetings">Мы рады приветствовать Вас на нашей страничке!</div>
+    <div id="description-syte">
+      В нашем приложении Вы можете вести историю обслуживания вашего
+      автомабиля.
+    </div>
+    <div class="login">
+      <span>
+        Для использования приложения Вам необходимо пройти регистрацию либо
+        войти под своей учетной запсью.
+      </span>
+      <div class="btn_login">
+        <span id="btn-reg" class="btn_nav_log"><a href="#">Зарегистрироватся</a></span>
+        <span id="btn-in" class="btn_nav_log"><a href="#">Войти</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- registration form -->
+  <div id="modal2" class="modal2">
+    <div class="reg_form">
+      <form id="reg-form" action="https://fe.it-academy.by/TestForm.php" method="post">
+        <div id="login" class="input_form_reg">
+          <p>Логин</p>
+          <input id="login-for-reg" type="text" name="user_name" placeholder="Login" />
+          <p class="mess_eror">Пользователь с таким именем уже зарегистрирован</p>
+          <p id="log-eror-reg" class="mess_eror">Не верный логи</p>
+        </div>
+        <div id="password" class="input_form_reg">
+          <p>Пароль</p>
+          <input id="pass-for-reg" type="password" name="pass" placeholder="Password" />
+          <p id="pass-eror-reg" class="mess_eror">Пароль должен содержать хотябы 4 симвала</p>
+        </div>
+        <div id="password2" class="input_form_reg">
+          <p>Повторите пароль</p>
+          <input id="pass-confirm" type="password" name="pass2" placeholder="Confirm password" />
+          <p id="pass-eror-conf" class="mess_eror">Не верно введен повторно пароль</p>
+        </div>
+        <div id="choice-of-car" class="input_form_reg">
+          <p>Укажите марку вашего авто</p>
+          <select id="logo-car" name="choice_of_car">
+            <option value="">Бренд автомабиля</option>
+            <option value="img/icon_auto/Acura.png">Acura</option>
+            <option value="img/icon_auto/Audi.png">Audi</option>
+            <option value="img/icon_auto/BMW.png">BMW</option>
+            <option value="img/icon_auto/Chery.png">Chery</option>
+            <option value="img/icon_auto/Chevrolet.png">Chevrolet</option>
+            <option value="img/icon_auto/Citroen.png">Citroen</option>
+            <option value="img/icon_auto/Daewoo.png">Daewoo</option>
+            <option value="img/icon_auto/Fiat.png">Fiat</option>
+            <option value="img/icon_auto/Ford.png">Ford</option>
+            <option value="img/icon_auto/Geely.png">Geely</option>
+            <option value="img/icon_auto/Honda.png">Honda</option>
+            <option value="img/icon_auto/Hyundai.png">Hyundai</option>
+            <option value="img/icon_auto/Infiniti.png">Infiniti</option>
+            <option value="img/icon_auto/Jaguar.png">Jaguar</option>
+            <option value="img/icon_auto/Kia.png">Kia</option>
+            <option value="img/icon_auto/Lada.png">Lada</option>
+            <option value="img/icon_auto/Land-Rover.png">Land-Rover</option>
+            <option value="img/icon_auto/Lexus.png">Lexus</option>
+            <option value="img/icon_auto/Mazda.png">Mazda</option>
+            <option value="img/icon_auto/Mercedes.png">Mercedes</option>
+            <option value="img/icon_auto/Mitsubishi.png">Mitsubishi</option>
+            <option value="img/icon_auto/Nissan.png">Nissan</option>
+            <option value="img/icon_auto/Opel.png">Opel</option>
+            <option value="img/icon_auto/Peugeot.png">Peugeot</option>
+            <option value="img/icon_auto/Renault.png">Renault</option>
+            <option value="img/icon_auto/Skoda.png">Skoda</option>
+            <option value="img/icon_auto/Subaru.png">Subaru</option>
+            <option value="img/icon_auto/Toyota.png">Toyota</option>
+            <option value="img/icon_auto/Volkswagen.png">Volkswagen</option>
+            <option value="img/icon_auto/Volvo.png">Volvo</option>
+          </select>
+          <p id="eror-logo-car" class="mess_eror">Выберите марку авто</p>
+        </div>
+        <div id="car-check-when-buying" class="input_form_reg">
+          <p>Укажите пробег на момент покупки авто (км): </p>
+          <input id="start-mileage" placeholder="Пробег на момент покупки в киллометрах" name="car check when buying"
+            type="number">
+          <p id="eror-start-run-car" class="mess_eror">Выберите марку авто</p>
+        </div>
+        <div id="without-a-car" class="input_form_reg">
+          <p>Укажите текущий пробег авто (км): </p>
+          <input id="curent-run-car" placeholder="Текущий пробег авто в киллометрах" name="without a car" type="number">
+          <p id="eror-curent-run-car" class="mess_eror">Введите корректоное значение</p>
+        </div>
+        <div id="average-car-mileage" class="input_form_reg">
+          <p>Укажите средний пробег авто в месяц (км): </p>
+          <input id="average-mileage" placeholder="Средний пробег авто" name="average car mileage" type="number">
+          <p id="eror-average-mileage" class="mess_eror">Введите корректоное значение</p>
+        </div>
+        <div id="fuel-type" class="input_form_reg">
+          <p>Укажите используемое топливо</p>
+          <select id="tepe-fuel" name="fuel type">
+            <option value="">Топливо</option>
+            <option value="92">92 бензин</option>
+            <option value="95">95 бензин</option>
+            <option value="98">98 бензин</option>
+            <option value="dt">Дизельное топливо</option>
+            <option value="gas">Газ</option>
+          </select>
+          <p id="eror-tepe-fuel" class="mess_eror">Введите корректоное значение</p>
+        </div>
+        <div id="average-fuel-consumption" class="input_form_reg">
+          <p>Укажите средний расход топлива (л): </p>
+          <input id="average-fuel" placeholder="Средний расход" name="average fuel consumption" type="number" step="0.1"
+            min="4">
+          <p id="eror-average-fuel" class="mess_eror">Введите корректоное значение</p>
+        </div>
+        <div id="purchase-price" class="input_form_reg">
+          <p>Укажите стоимость авто при покупке ($): </p>
+          <input id="price-car" placeholder="Стоимость авто" name="purchase price" type="number">
+          <p id="eror-price-car" class="mess_eror">Введите корректоное значение</p>
+        </div>
+        <div id="send" class="input_form_reg">
+          <button type="submit">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p>
+        Copyright © 2022
+        <a href="https://www.it-academy.by/course/front-end-developer/" target="_blank">IT-academy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

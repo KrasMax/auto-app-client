@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=985">
+  <title>База по авто</title>
+  <link rel="shortcut icon" href="/img/logoTitle.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/carExperenses.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div id="block-nav">
+      <span class="btn_nav"><a href="main.html">Главная</a></span>
+
+      <span class="btn_nav"><a href="carExpenses.html">Расходы по авто</a></span>
+
+      <span class="btn_nav"><a href="winDetails.html">VIN деталей</a></span>
+    </div>
+  </header>
+
+  <div class="main_content">
+    <p>Расходы при эксплуатации авто</p>
+    <table class="content_info">
+      <thead>
+        <tr>
+          <td class="hederTable">Наименование расходов</td>
+          <td id="sort-run" class="hederTable flag">Пробег</td>
+          <td class="hederTable">Дата</td>
+          <td id="sort-cash" class="hederTable flag">Стоимоть (BYN)</td>
+        </tr>
+      </thead>
+      <tbody id="body-Table">
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p>
+        Copyright © 2022
+        <a href="https://www.it-academy.by/course/front-end-developer/" target="_blank">IT-academy</a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/carExperenses.js"></script>
+</body>
+
+</html>
