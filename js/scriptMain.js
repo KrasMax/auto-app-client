@@ -42,8 +42,11 @@ averageFuelConsumption.lastElementChild.textContent = `${((mileageHistory[mileag
 const runForChangOil = () => {
     let lastСhange = dataUser.changeOil.sort((a, b) => a - b);
     let boxOil = document.querySelector('#mileage-to-maintenance');
-    boxOil.innerHTML = `<span>После замены масла вы проехали</span>
-    <span>${Math.max(...mileageHistory) - Math.max(...lastСhange)} км</span>`
+    console.log(lastСhange.length);
+    if (lastСhange.length !== 0) {
+        boxOil.innerHTML = `<span>После замены масла вы проехали</span>
+        <span>${Math.max(...mileageHistory) - Math.max(...lastСhange)} км</span>`
+    }
 }
 
 runForChangOil();

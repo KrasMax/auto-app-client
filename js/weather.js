@@ -26,9 +26,9 @@ const renderWeather = async (lat, lon) => {
     imgWeather.innerHTML = `<img src="https://openweathermap.org/img/w/${dataWeather.weather[0].icon}.png" alt="Logo Weather">`;
     temperatureCurrent.innerHTML = `<span>${Math.round((dataWeather.main.temp) - 273)}</span>`;
     gustsWind.innerHTML = `<span>Порывы ветра до: ${dataWeather.wind.gust} м/с</span>`;
-    humidity.innerHTML = `<span>Влажнасть: ${dataWeather.main.humidity}%</span>`;
+    humidity.innerHTML = `<span>Влажность: ${dataWeather.main.humidity}%</span>`;
     wind.innerHTML = `<span>Ветер: ${dataWeather.wind.speed} м/с</span>`;
-    locatinWeather.innerHTML = `<span>Место положение: ${dataWeather.name}</span>`;
+    locatinWeather.innerHTML = `<span>Местоположение: ${dataWeather.name}</span>`;
 
 }
 
