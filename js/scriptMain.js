@@ -1,11 +1,3 @@
-let dateNow = new Date();
-let year = dateNow.getFullYear();
-let month = dateNow.getMonth() + 1;
-let date = dateNow.getDate();
-let hours = dateNow.getHours();
-let min = dateNow.getMinutes();
-
-let dateWrite = date + "." + month + "." + year + ".   " + hours + "." + min;
 
 let mainContent = document.querySelector('#main-content');
 
@@ -23,6 +15,7 @@ let curentWithout = document.querySelector('#curent-without');
 curentWithout.lastElementChild.textContent = `${mileageHistory[mileageHistory.length - 1]} километров`;
 
 let ratesUSD = Number(document.querySelector('.block_purchase_USD').textContent);
+
 let priceEvent = 0;
 dataUser.event.forEach(e => {
     priceEvent += e.price;
@@ -40,7 +33,7 @@ let averageFuelConsumption = document.querySelector('#average-fuel-consumption')
 averageFuelConsumption.lastElementChild.textContent = `${((mileageHistory[mileageHistory.length - 1] - dataUser.startMileage) * dataUser.fuelMiddle) / 100} литров топлива.`;
 
 const runForChangOil = () => {
-    let lastСhange = dataUser.changeOil.sort((a, b) => a - b);
+    let lastСhange = dataUser.changeOil;
     let boxOil = document.querySelector('#mileage-to-maintenance');
     if (lastСhange.length !== 0) {
         boxOil.innerHTML = `<span>После замены масла вы проехали</span>

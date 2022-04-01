@@ -1,14 +1,5 @@
-let dateNow = new Date();
-let year = dateNow.getFullYear();
-let month = dateNow.getMonth() + 1;
-let date = dateNow.getDate();
-let hours = dateNow.getHours();
-let min = dateNow.getMinutes();
-
-let dateWrite = date + "." + month + "." + year + "." + hours + "." + min;
 
 let dataAllUser = '';
-
 
 const URL_DATA_USER = 'https://history-auto.herokuapp.com/api/dataUser'
 
@@ -31,40 +22,31 @@ const getDataAllUser = () => {
 };
 getDataAllUser();
 
-//  Login Form
 let login = document.querySelector('#login-user');
 let logEror = document.querySelector('#log-eror');
 
 let curentUserData = {};
 
-// checLogin
 const checLogin = () => {
 
-    let subArr = [];
-    for (let i = 0; i < dataAllUser.length; i++) {
-        subArr.push(dataAllUser[i].login);
-    };
-
     let loginCurent = "";
-    for (let i = 0; i < subArr.length; i++) {
-        if (subArr[i] == login.value) {
-            loginCurent = subArr[i]
+    for (let i = 0; i < dataAllUser.length; i++) {
+        if (dataAllUser[i].login == login.value) {
+            loginCurent = dataAllUser[i].login
         }
     }
 
-    for (let i = 0; i < subArr.length; i++) {
-        if (login.value.trim() == "") {
-            logEror.style.display = 'block'
-            login.focus()
-            return true;
-        } else if (login.value.trim() !== loginCurent) {
-            logEror.style.display = 'block'
-            login.focus()
-            return true;
-        } else if (login.value.trim() == loginCurent) {
-            logEror.style.display = 'none'
-        } else return false
-    }
+    if (login.value.trim() == "") {
+        logEror.style.display = 'block'
+        login.focus()
+        return true;
+    } else if (login.value.trim() !== loginCurent) {
+        logEror.style.display = 'block'
+        login.focus()
+        return true;
+    } else if (login.value.trim() == loginCurent) {
+        logEror.style.display = 'none'
+    } else return false
 
     dataAllUser.forEach(elem => {
         if (elem.login == loginCurent) {
@@ -101,15 +83,11 @@ let carMileageEror = document.querySelector('#car-mileage-eror');
 const checCarMileageEror = () => {
     let arrMileage = curentUserData.mileageHistory;
 
-    arrMileage.sort((a, b) => {
-        return a - b;
-    });
-
-    if (Number(withoutTheCar.value) < arrMileage[arrMileage.length - 1]) {
+    if (Number(withoutTheCar.value) < Math.max(...arrMileage)) {
         carMileageEror.style.display = 'block'
         withoutTheCar.focus()
         return true
-    } else if (Number(withoutTheCar.value) >= arrMileage[arrMileage.length - 1]) {
+    } else if (Number(withoutTheCar.value) >= Math.max(...arrMileage)) {
         carMileageEror.style.display = 'none'
     }
     return false

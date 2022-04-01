@@ -7,15 +7,6 @@ let form = document.querySelector('#reg-form');
 
 let modalReg = document.querySelector('#modal2');
 
-let dateNow = new Date();
-let year = dateNow.getFullYear();
-let month = dateNow.getMonth() + 1;
-let date = dateNow.getDate();
-let hours = dateNow.getHours();
-let min = dateNow.getMinutes();
-
-let dateWrite = date + "." + month + "." + year + " " + hours + "." + min;
-
 let allLoginUsers = [];
 
 const URL_DATA_USER = 'https://history-auto.herokuapp.com/api/dataUser'
