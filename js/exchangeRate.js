@@ -13,10 +13,10 @@ const exchangeRate = async () => {
     let blockSaleRub = document.querySelector('.block_sale_RUB');
 
     label.textContent = `Курсы валют в AlfaBank на ${getFetch.rates[0].date}`;
-    blockPurchaseUsd.textContent = `${getFetch.rates[4].buyRate}`;
-    blockSaleUsd.textContent = `${getFetch.rates[4].sellRate}`;
-    blockPurchaseEur.textContent = `${getFetch.rates[0].buyRate}`;
-    blockSaleEur.textContent = `${getFetch.rates[0].sellRate}`;
+    blockPurchaseUsd.textContent = `${getFetch.rates[5].buyRate}`;
+    blockSaleUsd.textContent = `${getFetch.rates[5].sellRate}`;
+    blockPurchaseEur.textContent = `${getFetch.rates[4].buyRate}`;
+    blockSaleEur.textContent = `${getFetch.rates[4].sellRate}`;
     blockPurchaseRub.textContent = `${getFetch.rates[3].buyRate}`;
     blockSaleRub.textContent = `${getFetch.rates[3].sellRate}`;
 }
