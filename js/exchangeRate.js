@@ -4,6 +4,8 @@ const EXCHANGE_RATE_URL = 'https://developerhub.alfabank.by:8273/partner/1.0.1/p
 const exchangeRate = async () => {
     let getFetch = await (await fetch(EXCHANGE_RATE_URL)).json();
 
+    // console.log(getFetch);
+
     let label = document.querySelector('.label');
     let blockPurchaseUsd = document.querySelector('.block_purchase_USD');
     let blockSaleUsd = document.querySelector('.block_sale_USD');
@@ -13,10 +15,10 @@ const exchangeRate = async () => {
     let blockSaleRub = document.querySelector('.block_sale_RUB');
 
     label.textContent = `Курсы валют в AlfaBank на ${getFetch.rates[0].date}`;
-    blockPurchaseUsd.textContent = `${getFetch.rates[5].buyRate}`;
-    blockSaleUsd.textContent = `${getFetch.rates[5].sellRate}`;
-    blockPurchaseEur.textContent = `${getFetch.rates[4].buyRate}`;
-    blockSaleEur.textContent = `${getFetch.rates[4].sellRate}`;
+    blockPurchaseUsd.textContent = `${getFetch.rates[4].buyRate}`;
+    blockSaleUsd.textContent = `${getFetch.rates[4].sellRate}`;
+    blockPurchaseEur.textContent = `${getFetch.rates[0].buyRate}`;
+    blockSaleEur.textContent = `${getFetch.rates[0].sellRate}`;
     blockPurchaseRub.textContent = `${getFetch.rates[3].buyRate}`;
     blockSaleRub.textContent = `${getFetch.rates[3].sellRate}`;
 }
